@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <title>hey, this is hye.</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <meta charset='utf-8'>
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Hye ['Hey'] Chang</h1>
+        </header>
+
+    <div id="main">
+        <div id="container">
+            <div class="feature ig" id="storm king"><img src="img/stormking.jpg" onclick="window.open('http://instagram.com/p/nbbGx7vLsI/?modal=true')"/></div>
+            <div class="feature ig" id="uchicago quad"><img src="img/uchicago.jpg" onclick="window.open('http://instagram.com/p/BE3rlKhPLsr/?modal=true')"/></div>
+            <div class="feature ig" id="artsy"><img src="img/artsy.jpg" onclick="window.open('http://instagram.com/p/ouVqxhPLmg/?modal=true')"/></div>
+            <div class="feature ig" id="marathon"><img src="img/marathon.jpg" onclick="window.open('http://instagram.com/p/nbbGx7vLsI/?modal=true')"/></div>
+            <div class="feature ig" id="temple"><img src="img/temple.jpg" onclick="window.open('http://instagram.com/p/oeFlu2PLmQ/?modal=true')"/></div>
+            <div class="feature ig" id="korean spa"><img src="img/koreanspa.jpg" onclick="window.open('http://instagram.com/p/4LPNCgPLnu/?modal=true')"/></div>
+            <div class="feature ig" id="k child"><img src="img/koreanchild.jpg" onclick="window.open('http://instagram.com/p/BFr37V9PLrC/?modal=true')"/></div>
+            <div class="feature ig" id="nyc running"><img src="img/nyrunning.jpg" onclick="window.open('http://instagram.com/p/BFXXQLQPLrh/?modal=true')"/></div>
+            <div class="feature ig" id="noel"><img src="img/noel.jpg" onclick="window.open('http://instagram.com/p/oeFlu2PLmQ/?modal=true')"/></div>
+            <div class="feature ig" id="central perk"><img src="img/centralpark.jpg" onclick="window.open('http://instagram.com/p/BEjDnX_PLuO/?modal=true')"/></div>
+            <div class="feature ig" id="willis tower"><img src="img/chicagonight.jpg" onclick="window.open('http://instagram.com/p/vRQrwCPLt1/?modal=true')"/></div>
+            <div class="feature ig" id="halongbae"><img src="img/halongbae.jpg" onclick="window.open('http://instagram.com/p/uCfYoFvLso/?modal=true')"/></div>
+            <div class="feature ig" id="eating penny"><img src="img/eatingpenny.jpg" onclick="window.open('http://instagram.com/p/rP60iwPLp7/?modal=true')"/></div>
+            <div class="feature ig" id="burger thruple"><img src="img/burger.jpeg" onclick="window.open('http://instagram.com/p/orO4DWvLvl/?modal=true')"/></div>
+            <div class="feature ig" id="chicago wigout"><img src="img/wigout.gif" onclick="window.open('http://instagram.com/p/BGdTR1YPLo5/?modal=true')"/></div>
+            <div class="feature ig" id="sf happy"><img src="img/sf.jpg" onclick="window.open('http://instagram.com/p/omXjx6vLgK/?modal=true')"/></div>
+
+        </div>
+    </div>
+    <div id="email" style="display: none">
+        <p>hyeychang@gmail.com</p>
+    </div>
+    <div id="footer">
+        <h2><span>A thriving millennial, <br>
+        aspiring civic technologist <br></span>
+            Yes, I listened to Serial.</h2>
+        <img id="email_icon" src="img/email.png" onmouseover="this.src='img/email_hover.png'" onmouseout="this.src='img/email.png'" />
+    </div>
+
+<script>
+    function display(x) {
+        var feature = x;
+        $( "#content" ).fadeIn(1000);
+    };
+    var close = document.getElementById("close");
+    $( close ).click(function() {
+        $( "#content" ).fadeOut(1000);
+    });
+    var button = document.getElementById("email_icon");
+    $( button ).click(function() {
+      if ( $( "#email:first" ).is( ":hidden" ) ) {
+        $( "#email" ).slideDown( "slow" );
+      } else {
+        $( "#email" ).slideUp();
+      }
+    });
+</script>
+
+</body>
+</html>
